@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список клиентов</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script defer src="JS/choices.min.js"></script>
+  <script defer src="JS/script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="logo-link" href="#">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+        <form id="form-filter" class="form-filter" action="#">
+          <input id="form-filter__input" class="form-filter__input" type="text" placeholder="Введите запрос">
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="main-container" class="container">
+      <h1 class="main-heading">Клиенты</h1>
+      <table class="table">
+        <thead class="thead">
+          <tr>
+            <th id="id" class="table-header first-colomn table-header-id-gap"><span id="arrow-id"
+                class="arrow-id">ID</span></th>
+            <th id="full-name" class="table-header second-colomn table-header-gap"><span id="arrow-fio"
+                class="arrow-fio">Фамилия Имя
+                Отчество</span><span class="order">А-Я</span></th>
+            <th id="new-date" class="table-header third-colomn"><span id="arrow-date-add" class="arrow-date">Дата и
+                время создания</span></th>
+            <th id="edit-date" class="table-header fourth-colomn"><span id="arrow-date-edit"
+                class="arrow-date">Последние изменения</span></th>
+            <th class="table-header fifth-colomn table-header-gap">Контакты</th>
+            <th class="table-header sixth-colomn table-header-gap"><span class="table-header-action">Действия</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tbody" class="tbody">
+        </tbody>
+      </table>
+      <button id="btn-add-client" class="btn-reset btn-add-client">Добавить&nbsp;клиента</button>
+      <!-- <div id="modal-add-client" class="modal modal-add-client">
+        <div class="modal__add">
+          <button id="modal-close-btn-add" class="btn-reset modal__close-btn">
+            <span class="btn-line"></span>
+            <span class="btn-line"></span>
+          </button>
+          <h2 class="modal__header">
+            Новый клиент
+          </h2>
+          <form id="form-add" type="text" class="modal__form" action="" method="POST">
+            <div class="modal-inputs-wrapper">
+              <div class="modal-input-wrapper">
+                <label class="modal__label modal__label-visability asterisk" for="">Фамилия</label>
+                <input id="input-add-last-name" class="modal__input" type="text" required>
+                <span class="placeholder">Фамилия<span class="placeholder-asterisk">*</span></span>
+              </div>
+              <div class="modal-input-wrapper">
+                <label class="modal__label modal__label-visability asterisk" for="">Имя</label>
+                <input id="input-add-name" class="modal__input" type="text" required>
+                <span class="placeholder">Имя<span class="placeholder-asterisk">*</span></span>
+              </div>
+              <div class="modal-input-wrapper">
+                <label class="modal__label modal__label-visability" for="">Отчество</label>
+                <input id="input-add-middle-name" class="modal__input" type="text" placeholder="Отчество">
+              </div>
+            </div>
+            <div class="modal__add-contact-section">
+              <div id="add-client-select-wrapper" class="add-contact-section-container">
+                <button id="btn-add-contact-add-client" type="button" class="btn-reset btn-add-contact">
+                  Добавить контакт
+                </button>
+              </div>
+            </div>
+            <div id="error-box" class="error-box">
+            </div>
+            <div class="modal-inputs-wrapper">
+              <button id="btn-submit" class="btn-reset btn-submit">
+                Сохранить
+              </button>
+              <button id="modal-add-btn-cancel" type="button" class="btn-reset btn-second">
+                Отмена
+              </button>
+            </div>
+          </form>
+        </div>
+      </div> -->
+    </div>
+  </main>
+</body>
+
+</html>
