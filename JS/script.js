@@ -1616,7 +1616,9 @@
           let formattedValue = event.target.value.replace(/\D/g, '');
 
           // Не печатается больше 11 символов
-          if (formattedValue.length > 11) {
+          if (formatt
+            
+            edValue.length > 11) {
             formattedValue = formattedValue.slice(0, 11);
           }
 
